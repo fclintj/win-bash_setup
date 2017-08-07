@@ -20,7 +20,6 @@
     set visualbell     " turn off chime 
      "":set mouse=a
 
-
 "" ┌───────────────────┐
 "" │    theme setup    │
 "" └───────────────────┘
@@ -59,12 +58,8 @@
     let g:ycm_always_populate_location_list = 1 " filter through errors
     noremap <c-n> :lne <CR>
     autocmd FileType c,cpp,java setlocal commentstring=//\ %s " set comment as // for c and cpp
-    let g:vimwiki_list = [{'path' : '/mnt/c/Users/clint/Google Drive/dev/vimwiki'}]  " set new default vimwiki folder"
-    
-    " windows buffer 
-    noremap <C-p> :read /mnt/c/Users/clint/Google\ Drive/dev/windows/Programs/bash_buffer.txt<CR> 
-    vnoremap <C-y> :'<,'>w! /mnt/c/Users/clint/Google\ Drive/dev/windows/Programs/bash_buffer.txt<CR><CR>
-    
+    let g:vimwiki_list = [{'path' : '~/.vimwiki'}]  " set new default vimwiki folder 
+
 "" ┌────────────────────┐
 "" │ search/replace all │
 "" └────────────────────┘
@@ -107,3 +102,4 @@
 map tw vipgqvipgc
 "" join broken line with comments into single paragraph
 map tj vipgcvipJvipgc
+
